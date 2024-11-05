@@ -3,7 +3,7 @@ python-dotenv
 python-telegram-bot[all]
 pymongo==4.6.3
 python-dotenv
-https://github.com/Abishnoi69/async_mongo@master
+https://github.com/Abishnoi69/async_mongo
 Flask==1.1.2
 gunicorn==20.1.0
 Jinja2==3.0.3
