@@ -16,6 +16,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application code
 COPY . .
 
+EXPOSE 8080
+
 COPY start.sh /app/start.sh
 
 # Make the start.sh script executable
