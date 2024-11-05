@@ -4,6 +4,9 @@ FROM python:3.10.6-slim
 # Set working directory
 WORKDIR /app
 
+# Update pip and install git
+RUN apt update && apt install -y git && pip install --upgrade pip
+
 # Copy requirements file
 COPY requirements.txt .
 
