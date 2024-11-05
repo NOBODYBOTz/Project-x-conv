@@ -16,8 +16,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application code
 COPY . .
 
-# Expose port
-EXPOSE 8080
+COPY start.sh /app/start.sh
 
-# Run command
-CMD ["python3", "-m", "Assistant"]
+# Make the start.sh script executable
+RUN chmod +x /app/start.sh
+
+# Run start.sh when the container launches
+CMD ["/app/start.sh"]
