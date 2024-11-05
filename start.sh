@@ -4,4 +4,4 @@
 python web.py &
 
 # Start the bot
-exec python -m Assistant.__main__
+exec python -m Assistant
